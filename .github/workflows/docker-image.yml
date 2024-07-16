@@ -12,14 +12,14 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.SEP_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.0
         with:
-          node-version: 18
+          node-version: 21
 
       - name: Install dependencies
         run: npm install
@@ -72,7 +72,7 @@ jobs:
           git config  user.email "actions@github.com"
           git add version
           git commit -m "[skip ci] Bump version to ${{ steps.version.outputs.version }}"
-          git push origin master
+          git push origin main
 
     # - uses: actions/checkout@v4
     # - name: Build the Docker image
