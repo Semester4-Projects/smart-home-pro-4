@@ -1,0 +1,8 @@
+# myApp/docker-compose.yaml
+version: "1.0"
+services:
+  frontend:
+    build: ./
+    container_name: smart-home
+    ports:
+      - '3000:3000'
