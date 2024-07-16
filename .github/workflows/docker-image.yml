@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./
+        working-directory: ./smart-home-pro-4/package.json
 
       - name: Build
         run: npm run build
