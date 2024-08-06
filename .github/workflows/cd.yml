@@ -1,9 +1,10 @@
 name: CD for React Application
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["CI for React Application"]
+    types:
+      - completed
 
 jobs:
   deploy:
