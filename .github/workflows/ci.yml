@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16.20.2'  # Specify the Node.js version you need
+          node-version: '18'  # Specify the Node.js version you need
 
       - name: Install dependencies
         run: |
@@ -32,6 +32,9 @@ jobs:
       - name: Build the React app
         run: |
           CI=false npm run build
+
+      - name: List build directory for debugging
+        run: ls -R build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
