@@ -1,49 +1,70 @@
-# Intro Smart Home FrontEND: 
+# Getting Started with Create React App
 
-The Smart Home Frontend project is designed to enable users to monitor and control their home's temperature remotely. This web-based interface provides remote access to managing and monitoring the temperature of various rooms within a house.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Getting Started:
+## Available Scripts
 
-To get started with this project on your local machine, follow these steps:
+In the project directory, you can run:
 
-Clone the Repository:
+### `npm start`
 
-git clone https://github.com/Semester4-Projects/smart-home-pro-4.git
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Navigate to the Project Directory:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Change into the project directory where the application is located:
+### `npm test`
 
-cd smart-home-pro-4
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# Install Dependencies:
+### `npm run build`
 
-The project uses Node.js for package management. To install the necessary dependencies, follow these steps:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Ensure you have Docker installed on your machine.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Build and run the Docker container:
-docker build -t smart-home-frontend -f frontend/Dockerfile .
-docker run -p 3080:3080 smart-home-frontend
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Alternatively, you can run the project directly without Docker by using npm:
+### `npm run eject`
 
-npm start
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-This command will launch the application, and you can access it in your web browser at http://localhost:3090
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Key Features of the Project:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-The Smart Home Frontend application provides the following functionalities:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Room Temperature Monitoring: View the current temperature of various rooms in your home.
-Remote Temperature Control: Adjust the temperature of rooms from anywhere using the web interface.
-Temperature History: Maintain a historical record of temperature changes for each room.
-Room Management: Add new rooms and delete existing ones as needed.
+## Learn More
 
-# Contribution:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Any sort of contribution will be highly appreciated so simply follow the steps like Forking the Repo and create your branch for new feature or bug fix, Make and test your changes, push to the forked repo and finally submit a pull request with the description of the changes.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

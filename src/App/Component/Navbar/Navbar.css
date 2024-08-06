@@ -1,0 +1,25 @@
+.nav__bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+
+    .btn{
+        cursor: pointer;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        font-weight: 400;
+
+        background-color: #fff;
+
+        padding: 10px 20px;
+
+        border: 2px solid #637DDF;
+        color: #637DDF;
+
+        outline: none;
+    }
+}

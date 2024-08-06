@@ -1,0 +1,70 @@
+{
+  "homes": [
+    {
+      "address": "My addressdsff",
+      "deviceEui": "Tv id",
+      "id": "7438"
+    },
+    {
+      "id": "7430",
+      "address": "sdf",
+      "deviceEui": "sdf"
+    },
+    {
+      "id": "4ee2",
+      "address": "sdfsdf",
+      "deviceEui": "sdfsds"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "7239",
+      "home_id": "7430",
+      "roomName": "sdfs",
+      "idealTemperature": 23,
+      "isDefault": false,
+      "idealHumidity": 213,
+      "limits": {
+        "humidityMin": 213,
+        "humidityMax": 123,
+        "temperatureMin": 123,
+        "temperatureMax": 221
+      }
+    },
+    {
+      "id": "1444",
+      "roomName": "sdfsdfsfasdfsdf",
+      "idealTemperature": 23423423,
+      "isDefault": true,
+      "idealHumidity": 234234,
+      "limits": {
+        "humidityMin": 234234,
+        "humidityMax": 4234234234,
+        "temperatureMin": 23423423,
+        "temperatureMax": 234234
+      },
+      "home_id": "7430"
+    },
+    {
+      "id": "d7b9",
+      "roomName": "Test",
+      "idealTemperature": 23423,
+      "isDefault": true,
+      "idealHumidity": 3333333333333333,
+      "limits": {
+        "humidityMin": 2343,
+        "humidityMax": 33333333,
+        "temperatureMin": 444444444,
+        "temperatureMax": 2323
+      },
+      "home_id": "7438"
+    }
+  ],
+  "devices": [
+    {
+      "id": 1,
+      "name": "Bedroom",
+      "deviceEui": "test1"
+    }
+  ]
+}

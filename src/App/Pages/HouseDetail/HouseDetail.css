@@ -1,0 +1,170 @@
+#mainHouseDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 72px;
+
+    width: 100%;
+}
+
+.house__detail {
+
+    top: 72px;
+    position: sticky;
+
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    min-height: 100%;
+    width: 450px;
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+
+        width: 100%;
+
+        .detail__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            width: 100%;
+
+            .detail__list {
+
+                /* Layout */
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 100%;
+
+                /* Style */
+
+                color: var(--dark-color);
+                font-size: 20px;
+                font-weight: 400;
+
+                >span {
+                    color: var(--primary-color);
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+
+    .btn {
+        transition: .3s;
+        width: 100%;
+    }
+
+    .btn:hover {
+        animation: scale__small__big .2s 1;
+    }
+}
+
+
+.room__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+
+    width: 100%;
+
+    .cards__container {
+        width: 100%;
+
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .room__card {
+
+            /* Layout */
+
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            padding: 18px;
+
+            transition: .3s;
+
+            /* Style */
+
+            border-radius: 10px;
+            background: #EEF2F3;
+            box-shadow: 0px 4px 9.4px 0px rgba(133, 160, 251, 0.20);
+
+            .card__img {
+
+                /* Layout */
+
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+            }
+
+            .room__text {
+
+                /* Layout */
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                /* Style */
+
+                color: var(--dark-color);
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                >span {
+                    color: var(--primary-color);
+                }
+            }
+
+            >.house__text {
+                padding-left: 7px;
+            }
+        }
+
+        .room__card:hover{
+            transform: scale(1.08);
+        }
+    }
+}
+
+
+@keyframes scale__small__big {
+    0% {
+        scale: 1;
+    }
+
+    25% {
+        scale: .95;
+    }
+
+    65% {
+        scale: 1.05;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

@@ -1,0 +1,69 @@
+
+
+.home{
+    width: 100%;
+}
+
+.cards__container {
+    width: 100%;
+
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .house__card {
+
+        /* Layout */
+
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        padding: 18px;
+
+        /* Style */
+
+        border-radius: 10px;
+        background: #EEF2F3;
+        box-shadow: 0px 4px 9.4px 0px rgba(133, 160, 251, 0.20);
+
+        .card__img {
+
+            /* Layout */
+
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+
+        }
+
+        .house__text {
+
+            /* Layout */
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            /* Style */
+
+            color: var(--dark-color);
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            >span {
+                color: var(--primary-color);
+            }
+        }
+
+        >.house__text {
+            padding-left: 7px;
+        }
+    }
+}

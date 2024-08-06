@@ -1,0 +1,41 @@
+#mainRoomDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 72px;
+
+    width: 100%;
+}
+.roomDetail__container {
+    gap: 32px;
+
+    .tabs__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        gap: 24px;  
+
+        .tab {
+            color: var(--dark-color);
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .tab.active{
+            color: var(--primary-color);
+        }
+    }
+
+    .cards__container {
+        grid-template-columns: repeat(1, 1fr);
+
+        .room__card {
+            gap: 20px;
+        }
+
+        .room__card:hover {
+            transform: scale(1.05);
+        }
+    }
+}
