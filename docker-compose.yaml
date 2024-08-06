@@ -1,8 +1,7 @@
-# myApp/docker-compose.yaml
-version: "1.0"
+version: '3.8'
+
 services:
-  frontend:
-    build: ./
-    container_name: smart-home
+  react-app:
+    build: .
     ports:
-      - '3000:3000'
+      - "80:80"
