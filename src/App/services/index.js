@@ -47,11 +47,7 @@ export default class PP2Service {
     } catch (err) {
       console.log("Some error", err);
 
-      //Sentry.captureException(err)
-      // Sentry.captureMessage(
-      // 	'Wrong url request' + url + ' httpverbs' + http_verb,
-      // )
-
+      
       return false;
     }
   }
