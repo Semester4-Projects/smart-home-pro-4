@@ -4,7 +4,7 @@ import { Config } from '../constant/Index';
 const API_URL = `${Config.serverUrl}users`
 
 const authService = {
-  // Method for logging in the user
+  // To login the user
   async login(email, password) {
     try {
       const response = await axios.get(API_URL, {
@@ -54,3 +54,4 @@ const authService = {
 };
 
 export default authService;
+
